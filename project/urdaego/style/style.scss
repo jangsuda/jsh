@@ -1,0 +1,180 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none !important;
+  -moz-user-select: -moz-none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Asta+Sans:wght@300..800&display=swap");
+
+$m-inlign: calc(100dvw / 24 * 1);
+$border-radius: 0.25rem;
+$span-1: calc(100dvw / 24 * 1);
+$span-2: calc(100dvw / 24 * 2);
+$span-3: calc(100dvw / 24 * 3);
+$span-4: calc(100dvw / 24 * 4);
+$span-5: calc(100dvw / 24 * 5);
+$span-6: calc(100dvw / 24 * 6);
+
+$n-black: rgba(0, 0, 0, 1);
+$n-white: rgba(245, 245, 245, 1);
+
+.span-1 {
+  width: calc(100dvw / 24 * 1);
+}
+.span-2 {
+  width: calc(100dvw / 24 * 2);
+}
+.span-3 {
+  width: calc(100dvw / 24 * 3);
+}
+.span-4 {
+  width: calc(100dvw / 24 * 4);
+}
+.span-5 {
+  width: calc(100dvw / 24 * 5);
+}
+.span-6 {
+  width: calc(100dvw / 24 * 6);
+}
+
+body {
+  background-image: linear-gradient(
+    to left,
+    rgba(174, 174, 174, 0.5) 0.0469rem,
+    transparent 0.0469rem
+  );
+  background-size: calc(100dvw / 24) 100%;
+  background-position: center top;
+  background-repeat: repeat;
+  font-family: "Asta Sans", sans-serif;
+}
+
+#BtnContainer {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 1;
+  top: 2.5rem;
+  padding-inline: $m-inlign;
+  width: 100dvw;
+  .btn {
+    width: calc($span-3 / 3) * 2.5;
+    height: $span-1;
+    border: none;
+    border-radius: $border-radius;
+    cursor: pointer;
+    font-family: "Asta Sans", sans-serif;
+  }
+}
+
+#BtnContainer > .btn:hover {
+  background-color: rgba(255, 0, 0, 1);
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+
+.container {
+  margin-block: 5rem;
+  padding-inline: $m-inlign;
+  width: 100dvw;
+  padding-block: 3rem;
+  .info-wrapper {
+    margin: 0 auto;
+    display: block;
+    .p-info {
+      text-align: center;
+      padding: $span-1 0;
+      h1 {
+        font-size: 7.5rem;
+        padding-bottom: 0.75rem;
+      }
+      .p-detail {
+        display: inline-block;
+        margin: 0 0 0.75rem 0;
+        padding: 0.25rem 0.75rem;
+        font-weight: 600;
+        border-radius: $border-radius;
+      }
+      #p-detail {
+        display: inline-block;
+        width: $span-6;
+        padding-top: 2rem;
+        word-break: keep-all;
+      }
+    }
+  }
+  .content-wrapper {
+    margin-inline: $span-3;
+    filter: drop-shadow(
+      0 0 0.1rem rgba(174, 174, 174, 0.5)
+    );
+    > video,
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+}
+
+.theme-light {
+  background-color: #fff;
+  color: #000;
+  .btn {
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+  }
+  .btn :hover {
+    background-color: rgba(255, 0, 0, 1);
+    color: rgba(0, 0, 0, 1);
+    transition: all 0.2s ease-in-out;
+  }
+  .p-detail {
+    background-color: #000;
+    color: #fff;
+  }
+}
+
+.theme-dark {
+  background-color: #000;
+  color: rgba(239, 239, 239, 1);
+  .btn {
+    background-color: rgba(217, 217, 217, 1);
+    a {
+      color: #000;
+    }
+  }
+  .btn :hover {
+    background-color: rgba(210, 0, 0, 1);
+    color: #000;
+    transition: all 0.2s ease-in-out;
+  }
+  .p-detail {
+    background-color: rgba(217, 217, 217, 1);
+    color: #000;
+  }
+}
+
+.theme-red {
+  background-color: #fff;
+  color: #000;
+  .btn {
+    background-color: rgba(255, 0, 0, 1);
+    color: rgba(0, 0, 0, 1);
+  }
+  .btn :hover {
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+    transition: all 0.2s ease-in-out;
+  }
+  .p-detail {
+    background-color: #000;
+    color: #fff;
+  }
+}

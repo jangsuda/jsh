@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Asta+Sans:wght@300..800&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none !important;
+  -moz-user-select: -moz-none !important;
+  user-select: none !important;
+}
+
+.span-1 {
+  width: 4.1666666667dvw;
+}
+
+.span-2 {
+  width: 8.3333333333dvw;
+}
+
+.span-3 {
+  width: 12.5dvw;
+}
+
+.span-4 {
+  width: 16.6666666667dvw;
+}
+
+.span-5 {
+  width: 20.8333333333dvw;
+}
+
+.span-6 {
+  width: 25dvw;
+}
+
+body {
+  background-image: linear-gradient(to left, rgba(174, 174, 174, 0.5) 0.0469rem, transparent 0.0469rem);
+  background-size: 4.1666666667dvw 100%;
+  background-position: center top;
+  background-repeat: repeat;
+  font-family: "Asta Sans", sans-serif;
+}
+
+#BtnContainer {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 1;
+  top: 2.5rem;
+  padding-inline: 4.1666666667dvw;
+  width: 100dvw;
+}
+#BtnContainer .btn {
+  width: 10.4166666667dvw;
+  height: 4.1666666667dvw;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-family: "Asta Sans", sans-serif;
+}
+
+#BtnContainer > .btn:hover {
+  background-color: rgb(255, 0, 0);
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+
+.container {
+  margin-block: 5rem;
+  padding-inline: 4.1666666667dvw;
+  width: 100dvw;
+  padding-block: 3rem;
+}
+.container .info-wrapper {
+  margin: 0 auto;
+  display: block;
+}
+.container .info-wrapper .p-info {
+  text-align: center;
+  padding: 4.1666666667dvw 0;
+}
+.container .info-wrapper .p-info h1 {
+  font-size: 7.5rem;
+  padding-bottom: 0.75rem;
+}
+.container .info-wrapper .p-info .p-detail {
+  display: inline-block;
+  margin: 0 0 0.75rem 0;
+  padding: 0.25rem 0.75rem;
+  font-weight: 600;
+  border-radius: 0.25rem;
+}
+.container .content-wrapper {
+  margin-inline: 12.5dvw;
+  filter: drop-shadow(0 0 0.1rem rgba(174, 174, 174, 0.5));
+}
+.container .content-wrapper > video,
+.container .content-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.theme-light {
+  background-color: #fff;
+  color: #000;
+}
+.theme-light .btn {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+.theme-light .btn :hover {
+  background-color: rgb(255, 0, 0);
+  color: rgb(0, 0, 0);
+  transition: all 0.2s ease-in-out;
+}
+.theme-light .p-detail {
+  background-color: #000;
+  color: #fff;
+}
+
+.theme-dark {
+  background-color: #000;
+  color: rgb(239, 239, 239);
+}
+.theme-dark .btn {
+  background-color: rgb(217, 217, 217);
+}
+.theme-dark .btn a {
+  color: #000;
+}
+.theme-dark .btn :hover {
+  background-color: rgb(210, 0, 0);
+  color: #000;
+  transition: all 0.2s ease-in-out;
+}
+.theme-dark .p-detail {
+  background-color: rgb(217, 217, 217);
+  color: #000;
+}
+
+.theme-red {
+  background-color: #fff;
+  color: #000;
+}
+.theme-red .btn {
+  background-color: rgb(255, 0, 0);
+  color: rgb(0, 0, 0);
+}
+.theme-red .btn :hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  transition: all 0.2s ease-in-out;
+}
+.theme-red .p-detail {
+  background-color: #000;
+  color: #fff;
+}

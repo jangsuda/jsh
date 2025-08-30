@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Welcome To My Space&#58; &#41;</title>
+
+    <link
+      rel="stylesheet"
+      href="./style/style.css" />
+  </head>
+
+  <body
+    oncontextmenu="return false"
+    onselectstart="return false"
+    ondragstart="return false"
+    onkeydown="return false">
+    <nav>
+      <a href="../index.html">HOME</a>
+      <a href="../about/about.html">ABOUT</a>
+      <a href="#">PROJECT</a>
+      <a href="../contact/contact.html">
+        CONTACT
+      </a>
+      <div class="buttons">
+        <button id="lightMode"></button>
+        <button id="darkMode"></button>
+        <button id="redMode"></button>
+      </div>
+    </nav>
+
+    <div id="BtnContainer">
+      <button
+        class="btn active"
+        onclick="filterSelection('all')">
+        ALL
+      </button>
+      <button
+        class="btn"
+        onclick="filterSelection('uxui')">
+        UXUI
+      </button>
+      <button
+        class="btn"
+        onclick="filterSelection('brand')">
+        BRAND
+      </button>
+      <button
+        class="btn"
+        onclick="filterSelection('etc')">
+        ETC
+      </button>
+    </div>
+
+    <div class="container">
+      <a href="./urdaego/urdageo.html">
+        <div class="filterDiv uxui">
+          <div class="img-wrapper">
+            <img
+              src="./img/projects/thumbnail-1.jpg"
+              alt="" />
+            <div class="p-detail">
+              <p>UXUI &#40;Redesign&#41;</p>
+            </div>
+          </div>
+          <div class="project-info">
+            <p>2025</p>
+            <p>&times;</p>
+            <p class="p-i-title">어데고?!</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="./hirevisa/hirevisa.html">
+        <div class="filterDiv uxui">
+          <div class="img-wrapper">
+            <img
+              src="./img/projects/thumbnail-1.jpg"
+              alt="" />
+            <div class="p-detail">
+              <p>UXUI</p>
+            </div>
+          </div>
+          <div class="project-info">
+            <p>2024</p>
+            <p>&times;</p>
+            <p class="p-i-title">
+              Hire Visa &plus;
+            </p>
+          </div>
+        </div>
+      </a>
+
+      <a href="./connectx/connectx.html">
+        <div class="filterDiv brand uxui">
+          <div class="img-wrapper">
+            <img
+              src="./img/projects/thumbnail-1.jpg"
+              alt="" />
+            <div class="p-detail">
+              <p>Brand & Web</p>
+            </div>
+          </div>
+          <div class="project-info">
+            <p>2023&#45;2024</p>
+            <p>&times;</p>
+            <p class="p-i-title">CONNECT X</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="./pelicon/pelicon.html">
+        <div class="filterDiv uxui">
+          <div class="img-wrapper">
+            <img
+              src="./img/projects/thumbnail-1.jpg"
+              alt="" />
+            <div class="p-detail">
+              <p>UXUI</p>
+            </div>
+          </div>
+          <div class="project-info">
+            <p>date</p>
+            <p>&times;</p>
+            <p class="p-i-title">펠리콘</p>
+          </div>
+        </div>
+      </a>
+
+      <!-- <a href="">
+        <div class="filterDiv etc">
+          <div class="img-wrapper">
+            <img
+              src="./img/projects/thumbnail-1.jpg"
+              alt="" />
+            <div class="p-detail">
+              <p>Project Type</p>
+            </div>
+          </div>
+          <div class="project-info">
+            <p>date</p>
+            <p>&times;</p>
+            <p class="p-i-title">etc-title</p>
+          </div>
+        </div>
+      </a> -->
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

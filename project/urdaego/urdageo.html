@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Welcome To My Space&#58; &#41;</title>
+
+    <link
+      rel="stylesheet"
+      href="./style/style.css" />
+  </head>
+
+  <body
+    oncontextmenu="return false"
+    onselectstart="return false"
+    ondragstart="return false"
+    onkeydown="return false">
+    <div id="BtnContainer">
+      <button
+        class="btn"
+        onclick="history.back()">
+        &larr;
+      </button>
+      <button
+        class="btn"
+        onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+        &uarr;
+      </button>
+    </div>
+
+    <div class="container">
+      <div class="info-wrapper">
+        <div class="p-info">
+          <h1>어데고?!</h1>
+          <p class="p-detail">Participant</p>
+          <p>Personal &#58; 1</p>
+          <p id="p-detail">
+            개발자들과 협업하여 어플리케이션(ios)
+            출시 이후 기존 서비스를 기반으로 개인
+            리디자인 작업을 진행한 프로젝트입니다.
+          </p>
+        </div>
+        <div class="content-wrapper">
+          <img src="./asset/img_1.png" alt="" />
+          <img src="./asset/img_2.png" alt="" />
+          <img src="./asset/img_3.png" alt="" />
+          <img src="./asset/img_4-2.png" alt="" />
+          <video muted autoplay loop>
+            <source src="./asset/d2.mp4" />
+            />
+          </video>
+          <img src="./asset/img_6.png" alt="" />
+          <img src="./asset/img_7.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

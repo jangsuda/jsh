@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Asta+Sans:wght@300..800&display=swap");
 *,
 *::after,
@@ -127,14 +128,54 @@ nav a {
   transition: all 0.5s linear;
 }
 
-.img-container {
-  position: relative;
-  width: 100%;
-  height: calc(100dvh - 5rem);
+.c-info {
+  width: 100dvw;
+  margin-top: 2.5rem;
+  padding-inline: 4.1666666667dvw;
 }
-.img-container img {
-  top: 0;
+.c-info .txt {
+  text-align: center;
+}
+.c-info .c-contact .arrow {
+  font-size: 2vw;
+  font-weight: 600;
+  padding-block: 2.5rem;
+  animation: bounceArrow 1s ease-in-out infinite;
+  transition: 0.5s;
+}
+.c-info .c-contact p {
+  font-size: 2vw;
+}
+
+@keyframes bounceArrow {
+  0%, 100% {
+    transform: translateY(0); /* 시작/끝 위치 */
+  }
+  50% {
+    transform: translateY(10px); /* 아래로 이동 */
+  }
+}
+.btm-container {
+  position: fixed;
   left: 0;
+  bottom: 5rem;
+  z-index: -1;
   width: 100%;
-  height: calc(100dvh - 5rem);
+  display: flex;
+  justify-content: center;
+}
+.btm-container p {
+  position: relative;
+  bottom: -4.1666666667dvw;
+  padding: 0.5rem 0;
+  z-index: -1;
+  font-size: 13.5dvw;
+  font-weight: 600;
+}
+.btm-container img {
+  position: absolute;
+  width: 40dvw;
+  right: 4.1666666667dvw;
+  bottom: 0px;
+  z-index: -2;
 }

@@ -126,15 +126,3 @@ nav a {
   color: #fff;
   transition: all 0.5s linear;
 }
-
-.img-container {
-  position: relative;
-  width: 100%;
-  height: calc(100dvh - 5rem);
-}
-.img-container img {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: calc(100dvh - 5rem);
-}

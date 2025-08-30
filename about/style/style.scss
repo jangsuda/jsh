@@ -1,0 +1,145 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // 드래그 방지
+  -webkit-user-select: none !important;
+  -moz-user-select: -moz-none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Asta+Sans:wght@300..800&display=swap");
+
+$m-inlign: calc(100dvw / 24 * 1);
+$nav-height: 5rem;
+$border-radius: 0.25rem;
+$span-1: calc(100dvw / 24 * 1);
+$span-2: calc(100dvw / 24 * 2);
+$span-3: calc(100dvw / 24 * 3);
+$span-4: calc(100dvw / 24 * 4);
+$span-5: calc(100dvw / 24 * 5);
+$span-6: calc(100dvw / 24 * 6);
+
+$n-black: rgba(0, 0, 0, 1);
+$n-white: rgba(245, 245, 245, 1);
+
+.span-1 {
+  width: calc(100dvw / 24 * 1);
+}
+.span-2 {
+  width: calc(100dvw / 24 * 2);
+}
+.span-3 {
+  width: calc(100dvw / 24 * 3);
+}
+.span-4 {
+  width: calc(100dvw / 24 * 4);
+}
+.span-5 {
+  width: calc(100dvw / 24 * 5);
+}
+.span-6 {
+  width: calc(100dvw / 24 * 6);
+}
+
+body {
+  // margin-inline: $m-inlign;
+  background-image: linear-gradient(
+    to left,
+    rgba(174, 174, 174, 0.5) 0.0469rem,
+    transparent 0.0469rem
+  );
+  background-size: calc(100dvw / 24) 100%;
+  background-position: center top;
+  background-repeat: repeat;
+  font-family: "Asta Sans", sans-serif;
+}
+
+nav {
+  position: fixed;
+  bottom: 0rem;
+  width: 100%;
+  height: $nav-height;
+  display: flex;
+  box-shadow: 0 -0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+  a {
+    width: calc(100dvw / 4);
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  button {
+    width: 2rem;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+  }
+  #lightMode {
+    background-color: #fff;
+  }
+  #darkMode {
+    background-color: #000;
+  }
+  #redMode {
+    background-color: #ff0000;
+  }
+}
+
+.theme-light {
+  background-color: #fff;
+  color: #000;
+
+  nav {
+    background-color: rgba(191, 191, 191, 1);
+    a {
+      color: #000;
+    }
+  }
+  nav a:hover {
+    background-color: rgba(0, 0, 0, 1);
+    color: #fff;
+    transition: all 0.5s linear;
+  }
+}
+
+.theme-dark {
+  background-color: #000;
+  color: rgba(239, 239, 239, 1);
+  nav {
+    background-color: rgba(217, 217, 217, 1);
+    a {
+      color: #000;
+    }
+  }
+  nav a:hover {
+    background-color: rgba(69, 69, 69, 1);
+    color: rgba(239, 239, 239, 1);
+    transition: all 0.5s linear;
+  }
+}
+
+.theme-red {
+  background-color: #fff;
+  color: #000;
+  nav {
+    background-color: rgba(191, 191, 191, 1);
+    a {
+      color: #000;
+    }
+  }
+  nav a:hover {
+    background-color: rgba(0, 0, 0, 1);
+    color: #fff;
+    transition: all 0.5s linear;
+  }
+}

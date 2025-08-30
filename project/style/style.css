@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Asta+Sans:wght@300..800&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none !important;
+  -moz-user-select: -moz-none !important;
+  user-select: none !important;
+}
+
+.span-1 {
+  width: 4.1666666667dvw;
+}
+
+.span-2 {
+  width: 8.3333333333dvw;
+}
+
+.span-3 {
+  width: 12.5dvw;
+}
+
+.span-4 {
+  width: 16.6666666667dvw;
+}
+
+.span-5 {
+  width: 20.8333333333dvw;
+}
+
+.span-6 {
+  width: 25dvw;
+}
+
+body {
+  background-image: linear-gradient(to left, rgba(174, 174, 174, 0.5) 0.0469rem, transparent 0.0469rem);
+  background-size: 4.1666666667dvw 100%;
+  background-position: center top;
+  background-repeat: repeat;
+  font-family: "Asta Sans", sans-serif;
+}
+
+nav {
+  position: fixed;
+  bottom: 0rem;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  box-shadow: 0 -0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+nav a {
+  width: 25dvw;
+  text-align: center;
+  align-content: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
+.buttons button {
+  width: 2rem;
+  height: 100%;
+  border: none;
+  cursor: pointer;
+}
+.buttons #lightMode {
+  background-color: #fff;
+}
+.buttons #darkMode {
+  background-color: #000;
+}
+.buttons #redMode {
+  background-color: #ff0000;
+}
+
+.theme-light {
+  background-color: #fff;
+  color: #000;
+}
+.theme-light nav {
+  background-color: rgb(191, 191, 191);
+}
+.theme-light nav a {
+  color: #000;
+}
+.theme-light nav a:hover {
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  transition: all 0.5s linear;
+}
+.theme-light .btn.active {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+.theme-light .btn:hover {
+  background-color: rgb(255, 0, 0);
+  transition: all 0.2s ease-in-out;
+}
+.theme-light .project-info {
+  background-color: rgba(240, 240, 240, 0.5);
+}
+
+.theme-dark {
+  background-color: #000;
+  color: rgb(239, 239, 239);
+}
+.theme-dark nav {
+  background-color: rgb(217, 217, 217);
+}
+.theme-dark nav a {
+  color: #000;
+}
+.theme-dark nav a:hover {
+  background-color: rgb(69, 69, 69);
+  color: rgb(239, 239, 239);
+  transition: all 0.5s linear;
+}
+.theme-dark .btn.active {
+  background-color: rgb(239, 239, 239);
+  color: rgb(0, 0, 0);
+}
+.theme-dark .btn:not(.active) {
+  background-color: rgb(69, 69, 69);
+  color: rgb(239, 239, 239);
+}
+.theme-dark .btn:hover {
+  background-color: rgb(210, 0, 0);
+  color: #000;
+  transition: all 0.2s ease-in-out;
+}
+.theme-dark .project-info {
+  background-color: rgba(240, 240, 240, 0.2);
+  color: rgb(239, 239, 239);
+}
+
+.theme-red {
+  background-color: #fff;
+  color: #000;
+}
+.theme-red nav {
+  background-color: rgb(191, 191, 191);
+}
+.theme-red nav a {
+  color: #000;
+}
+.theme-red nav a:hover {
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  transition: all 0.5s linear;
+}
+.theme-red .btn.active {
+  background-color: rgb(255, 26, 26);
+  color: rgb(0, 0, 0);
+}
+.theme-red .btn:hover {
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+.theme-red .project-info {
+  background-color: rgba(240, 240, 240, 0.5);
+}
+
+#BtnContainer {
+  display: flex;
+  gap: 1.3888888889dvw;
+  position: fixed;
+  z-index: 1;
+  top: 2.5rem;
+  padding-inline: 4.1666666667dvw;
+}
+#BtnContainer .btn {
+  width: 10.4166666667dvw;
+  height: 4.1666666667dvw;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-family: "Asta Sans", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4.1666666667dvw;
+  justify-content: flex-start;
+  margin-block: 5rem;
+  margin-inline: 4.1666666667dvw;
+  padding-block: 3rem;
+}
+.container a {
+  display: none;
+  width: 27.7777777778dvw;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.container a.show {
+  display: block;
+}
+
+.filterDiv {
+  overflow: hidden;
+}
+.filterDiv .img-wrapper {
+  position: relative;
+  aspect-ratio: 3/2;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+.filterDiv .img-wrapper img {
+  width: 100%;
+  height: auto;
+  transition: all 0.2s ease-in-out;
+}
+.filterDiv .img-wrapper .p-detail {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem 0 0 0;
+  background-color: black;
+  color: white;
+}
+.filterDiv .project-info {
+  margin-top: 0.25rem;
+  padding: 0.25rem 0.75rem;
+  gap: 0.5rem;
+  border-radius: 0.25rem;
+  display: flex;
+}
+.filterDiv .project-info .p-i-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+a:hover img {
+  transform: scale(1.25);
+}
+
+.show {
+  display: block;
+}

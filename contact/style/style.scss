@@ -150,6 +150,10 @@ nav {
     text-align: center;
   }
   .c-contact {
+    position: relative;
+    z-index: -1;
+    color: white;
+    mix-blend-mode: difference;
     .arrow {
       font-size: 2vw;
       font-weight: 600;
@@ -178,7 +182,7 @@ nav {
   position: fixed;
   left: 0;
   bottom: $nav-height;
-  z-index: -1;
+  z-index: -2;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -186,7 +190,7 @@ nav {
     position: relative;
     bottom: -$span-1;
     padding: 0.5rem 0;
-    z-index: -1;
+    z-index: -2;
     font-size: 13.5dvw;
     font-weight: 600;
   }
@@ -196,6 +200,6 @@ nav {
     width: 40dvw;
     right: $span-1;
     bottom: 0px;
-    z-index: -2;
+    z-index: -3;
   }
 }

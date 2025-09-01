@@ -136,6 +136,12 @@ nav a {
 .c-info .txt {
   text-align: center;
 }
+.c-info .c-contact {
+  position: relative;
+  z-index: -1;
+  color: white;
+  mix-blend-mode: difference;
+}
 .c-info .c-contact .arrow {
   font-size: 2vw;
   font-weight: 600;
@@ -159,7 +165,7 @@ nav a {
   position: fixed;
   left: 0;
   bottom: 5rem;
-  z-index: -1;
+  z-index: -2;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -168,7 +174,7 @@ nav a {
   position: relative;
   bottom: -4.1666666667dvw;
   padding: 0.5rem 0;
-  z-index: -1;
+  z-index: -2;
   font-size: 13.5dvw;
   font-weight: 600;
 }
@@ -177,5 +183,5 @@ nav a {
   width: 40dvw;
   right: 4.1666666667dvw;
   bottom: 0px;
-  z-index: -2;
+  z-index: -3;
 }
